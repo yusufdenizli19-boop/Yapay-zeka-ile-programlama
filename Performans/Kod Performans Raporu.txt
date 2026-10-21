@@ -1,0 +1,7 @@
+KOD PERFORMANS RAPORU
+Veri sayisi: 5000 (Hastane Muayene Kaydi - Mükerrer Hasta ID Analizi)
+Eski kod suresi: 0.485120 saniye
+Optimize kod suresi: 0.000615 saniye
+Hizlanma: 788.81 kat
+Dogruluk testi: BASARILI
+Kisa yorum: Eski fonksiyon (bul), 5000 satırlık hastane verisinde birden fazla kez muayene olan hastaları (Hasta_ID) bulmak için iç içe iki döngü ve doğrusal liste araması (not in) kullandığından O(n^2) zaman karmaşıklığıyla çok yavaş çalışmıştır. Gemini ile optimize edilen yeni fonksiyonda (bul_optimize) Counter (hash tablosu) ve küme (set) veri yapıları kullanılarak zaman karmaşıklığı O(n) seviyesine indirilmiştir. İlk görülme sırası korunarak 992 adet mükerrer hasta kaydı birebir aynı sırada tespit edilmiş ve yaklaşık 789 kat hızlanma sağlanmıştır.
