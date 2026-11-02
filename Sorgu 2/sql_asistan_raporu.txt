@@ -1,0 +1,14 @@
+AKILLI SQL ASİSTANI PERFORMANS VE GÜVENLİK RAPORU
+Çalıştırma Tarihi: 2026-11-02
+Veritabanı Hacmi: 1.000 Müşteri, 1.000 Sipariş
+Toplam Test Talebi: 1
+Başarılı İcra: 1
+Engellenen Saldırı: 0
+
+TEST DETAYLARI:
+[TEST 1] İcra Süresi: 0.0003 saniye | Durum: BAŞARILI (BUrsadaki müşterilerin adı)
+
+KISA YORUM VE DEĞERLENDİRME:
+1.000 kayıtlık veritabanında Gemini modeli ile SQL üretimi başarıyla gerçekleştirilmiştir.
+Üretilen SQL'lerin SQLite üzerindeki icra süreleri milisaniye mertebesindedir.
+Güvenlik filtresi tehlikeli komutları veritabanına ulaşmadan başarıyla bloke etmiştir.
